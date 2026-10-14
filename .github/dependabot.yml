@@ -1,3 +1,4 @@
+# re-trigger after enabling the dependency graph (precondition asserted via SBOM 200)
 version: 2
 registries:
   da1:
