@@ -1,4 +1,3 @@
-# re-trigger after enabling the dependency graph (precondition asserted via SBOM 200)
 version: 2
 registries:
   da1:
@@ -43,46 +42,39 @@ updates:
     interval: daily
   registries:
   - da1
-  open-pull-requests-limit: 0
 - package-ecosystem: npm
   directory: /a2
   schedule:
     interval: daily
   registries:
   - da2
-  open-pull-requests-limit: 0
 - package-ecosystem: npm
   directory: /a3
   schedule:
     interval: daily
   registries:
   - da3
-  open-pull-requests-limit: 0
 - package-ecosystem: npm
   directory: /a4
   schedule:
     interval: daily
   registries:
   - da4
-  open-pull-requests-limit: 0
 - package-ecosystem: npm
   directory: /a5
   schedule:
     interval: daily
   registries:
   - da5
-  open-pull-requests-limit: 0
 - package-ecosystem: npm
   directory: /a6
   schedule:
     interval: daily
   registries:
   - da6
-  open-pull-requests-limit: 0
 - package-ecosystem: npm
   directory: /a7
   schedule:
     interval: daily
   registries:
   - da7
-  open-pull-requests-limit: 0
