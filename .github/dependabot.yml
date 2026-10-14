@@ -35,6 +35,11 @@ registries:
     url: https://192.168.1.1
     token: ${{secrets.DBOT_T}}
     replaces-base: true
+  da8:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
 updates:
 - package-ecosystem: npm
   directory: /a1
@@ -78,3 +83,9 @@ updates:
     interval: daily
   registries:
   - da7
+- package-ecosystem: npm
+  directory: /a8
+  schedule:
+    interval: daily
+  registries:
+  - da8
