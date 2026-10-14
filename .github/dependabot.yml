@@ -1,0 +1,87 @@
+version: 2
+registries:
+  da1:
+    type: npm-registry
+    url: https://169.254.169.254
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
+  da2:
+    type: npm-registry
+    url: https://127.0.0.1:9
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
+  da3:
+    type: npm-registry
+    url: https://192.0.2.1
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
+  da4:
+    type: npm-registry
+    url: https://registry.npmjs.org
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
+  da5:
+    type: npm-registry
+    url: https://10.0.0.1
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
+  da6:
+    type: npm-registry
+    url: https://172.16.0.1
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
+  da7:
+    type: npm-registry
+    url: https://192.168.1.1
+    token: ${{secrets.DBOT_T}}
+    replaces-base: true
+updates:
+- package-ecosystem: npm
+  directory: /a1
+  schedule:
+    interval: daily
+  registries:
+  - da1
+  open-pull-requests-limit: 0
+- package-ecosystem: npm
+  directory: /a2
+  schedule:
+    interval: daily
+  registries:
+  - da2
+  open-pull-requests-limit: 0
+- package-ecosystem: npm
+  directory: /a3
+  schedule:
+    interval: daily
+  registries:
+  - da3
+  open-pull-requests-limit: 0
+- package-ecosystem: npm
+  directory: /a4
+  schedule:
+    interval: daily
+  registries:
+  - da4
+  open-pull-requests-limit: 0
+- package-ecosystem: npm
+  directory: /a5
+  schedule:
+    interval: daily
+  registries:
+  - da5
+  open-pull-requests-limit: 0
+- package-ecosystem: npm
+  directory: /a6
+  schedule:
+    interval: daily
+  registries:
+  - da6
+  open-pull-requests-limit: 0
+- package-ecosystem: npm
+  directory: /a7
+  schedule:
+    interval: daily
+  registries:
+  - da7
+  open-pull-requests-limit: 0
